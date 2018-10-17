@@ -1,6 +1,7 @@
 package com.codecool.newsservice.repository;
 
 import com.codecool.newsservice.model.NewsArticle;
+import com.codecool.newsservice.model.NewsCategory;
 import org.joda.time.DateTime;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -17,5 +18,8 @@ public interface NewsArticleRepository extends JpaRepository<NewsArticle, Long> 
 
     @Transactional
     public NewsArticle getById(Long id);
+
+    @Transactional
+    public List<NewsArticle> getByCategory(NewsCategory category);
 
 }

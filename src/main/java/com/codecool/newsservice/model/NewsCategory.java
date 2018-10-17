@@ -5,4 +5,6 @@ public enum NewsCategory {
     SPORT,
     TECH,
     CULTURE
+
+
 }

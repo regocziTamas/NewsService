@@ -1,0 +1,14 @@
+<div class="content__article-body from-content-api js-article__body" data-test-id="article-review-body">
+<p>The Canadian government is ready to pardon those with a cannabis possession record of 30 grams or less as the country becomes the world&rsquo;s second and largest country with a legal national marijuana marketplace.</p>
+<p>A federal official said&nbsp;<a class="u-underline" href="https://www.theguardian.com/world/canada" data-link-name="auto-linked-tag" data-component="auto-linked-tag">Canada</a>&nbsp;would pardon people with convictions for possessing up to 30 grams of marijuana, the new legal threshold, with a formal announcement due later on Wednesday.</p>
+<p>The use of medical marijuana has been legal in Canada since 2001 and Justin Trudeau&rsquo;s government has spent two years working toward expanding that to include recreational marijuana. The goal is to better reflect society&rsquo;s changing opinion about marijuana and bring black market operators into a regulated system.</p>
+<p>Uruguay was the first country to legalise marijuana, in 2013.</p>
+<p>Legalisation began at midnight with shops in Canada&rsquo;s eastern-most provinces the first to sell the drug.</p>
+<p>&ldquo;I am living my dream. Teenage Tom Clarke is loving what I am doing with my life right now,&rdquo; said Tom Clarke, 43, whose shop in Newfoundland began business as soon as legally possible.</p>
+<p>Clarke has been dealing marijuana illegally in Canada for 30 years. He wrote in his high-school yearbook that his dream was to open a cafe in Amsterdam, the Dutch city where people have legally smoked weed in coffee shops since the 1970s.</p>
+<p>At least 111 legal pot shops are planning to open across the country of 37 million people on the first day, according to an Associated Press survey of the provinces.</p>
+<p>No stores will open in Ontario, which includes Toronto. The most populous province is working on its regulations and does not expect any stores to open until next spring.</p>
+<p>Canadians everywhere will be able to order marijuana products through websites run by provinces or private retailers and have it delivered to their homes by mail.</p>
+<div class="after-article js-after-article">&nbsp;</div>
+<div class="submeta">&nbsp;</div>
+</div>
