@@ -8,6 +8,8 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -64,7 +66,7 @@ public class NewsArticleController {
         return result.toString();
     }
 
-    @GetMapping("/news/recently")
+    @GetMapping("/news/randomthree")
     public String getRecentNews(){
         DateTime today = util.getTodaysDateTime();
         List<NewsArticle> todaysArticles = newsRepo.getArticlesByDate(today.getYear(),today.getMonthOfYear(),today.getDayOfMonth());
@@ -80,6 +82,12 @@ public class NewsArticleController {
     public String getMainArticle(){
         JsonObject obj = newsRepo.getById(11L).getJsonObj();
         return obj.toString();
+    }
+
+    @GetMapping("/news/latestthree")
+    public String getLatestThreeArticle(){
+        JsonArray result = util.createJsonArray(newsRepo.getLatestThree(PageRequest.of(0,3)));
+        return result.toString();
     }
 
 

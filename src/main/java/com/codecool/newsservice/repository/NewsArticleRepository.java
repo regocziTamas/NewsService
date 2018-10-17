@@ -3,6 +3,8 @@ package com.codecool.newsservice.repository;
 import com.codecool.newsservice.model.NewsArticle;
 import com.codecool.newsservice.model.NewsCategory;
 import org.joda.time.DateTime;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -21,5 +23,9 @@ public interface NewsArticleRepository extends JpaRepository<NewsArticle, Long> 
 
     @Transactional
     public List<NewsArticle> getByCategory(NewsCategory category);
+
+    @Transactional
+    @Query("select article from NewsArticle article  ORDER BY article.date DESC ")
+    public List<NewsArticle> getLatestThree(Pageable pageable);
 
 }
