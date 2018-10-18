@@ -112,7 +112,7 @@ public class NewsserviceApplication {
             String title12 = "Trump baby blimp to greet commuters over Los Angeles freeways";
             String summary12 = "The giant image of a diaper-clad Trump will appear this weekend in time for Politicon, a star-studded political conference";
             String article12 = util.readArticle("article12.txt");
-            String link12 = "http://www.slate.com/content/dam/slate/articles/news_and_politics/the_good_fight/2017/10/trump_s_right_he_s_ahead_of_schedule/USPOLITICSTRUMP.jpeg.CROP.promo-xlarge2.jpeg";
+            String link12 = "https://24.p3k.hu/app/uploads/2018/07/k_epa20180717177-e1532325383861-1024x627.jpg";
 
             NewsArticle newsArticle12 = new NewsArticle(author,today,title12,article12,NewsCategory.POLITICS,link12,summary12);
 

@@ -80,7 +80,7 @@ public class NewsArticleController {
 
     @GetMapping("/news/main")
     public String getMainArticle(){
-        JsonObject obj = newsRepo.getById(11L).getJsonObj();
+        JsonObject obj = newsRepo.getById(12L).getJsonObj();
         return obj.toString();
     }
 
