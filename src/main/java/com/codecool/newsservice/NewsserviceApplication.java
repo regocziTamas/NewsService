@@ -120,6 +120,7 @@ public class NewsserviceApplication {
 
             repository.save(newsArticle1);
             repository.save(newsArticle2);
+            repository.save(newsArticle3);
             repository.save(newsArticle4);
             repository.save(newsArticle5);
             repository.save(newsArticle6);
