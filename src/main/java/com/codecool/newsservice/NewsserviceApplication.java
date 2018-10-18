@@ -105,7 +105,7 @@ public class NewsserviceApplication {
             String title11 = "Cannabis becomes legal in Canada";
             String summary11 = "Country becomes second and largest with legal national marijuana marketplace";
             String article11 = util.readArticle("article11.txt");
-            String link11 = "https://www.vichealth.vic.gov.au/-/media/Images/VicHealth/youthstrategy1200x525.jpg?h=525&la=en&w=1200&hash=A64B03EB9F5FE8EEDF2092A5D00298B696EA2EDF";
+            String link11 = "https://i.guim.co.uk/img/media/fcc256e2d32b82b55bbbba85f3f15b217e9f89de/0_269_2000_1200/master/2000.jpg?width=620&quality=85&auto=format&fit=max&s=1c3dce8fc2062bb0e6ae96ae3ba061d4";
 
             NewsArticle newsArticle11 = new NewsArticle(author,today,title11,article11,NewsCategory.POLITICS,link11,summary11);
 
@@ -130,6 +130,8 @@ public class NewsserviceApplication {
             repository.save(newsArticle10);
             repository.save(newsArticle11);
             repository.save(newsArticle12);
+
+            String json = "{\"adimgurl\":\""+link1+"\"}";
 
         };
     }
