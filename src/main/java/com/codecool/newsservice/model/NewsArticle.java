@@ -9,7 +9,8 @@ import javax.persistence.*;
 
 @Entity
 public class NewsArticle {
-    @Id @GeneratedValue
+    @Id
+    @GeneratedValue
     private Long id;
     private String author;
     private DateTime date;
@@ -37,25 +38,22 @@ public class NewsArticle {
         day = date.getDayOfMonth();
     }
 
-    public NewsArticle(){
+    public NewsArticle() {
 
     }
-    public JsonObject getJsonObj(){
 
-
+    public JsonObject getJsonObj() {
         JsonObject temp = new JsonObject();
-        temp.addProperty("id",id);
-        temp.addProperty("author",author);
-        temp.addProperty("date",date.toString());
-        temp.addProperty("title",title);
-        temp.addProperty("article",article);
-        temp.addProperty("imgurl",imgUrl);
-        temp.addProperty("category",category.toString());
-        temp.addProperty("summary",summary);
-
+        temp.addProperty("id", id);
+        temp.addProperty("author", author);
+        temp.addProperty("date", date.toString());
+        temp.addProperty("title", title);
+        temp.addProperty("article", article);
+        temp.addProperty("imgurl", imgUrl);
+        temp.addProperty("category", category.toString());
+        temp.addProperty("summary", summary);
 
         return temp;
-
     }
 
     @Override
@@ -63,7 +61,7 @@ public class NewsArticle {
         return "ID: " + id + " Author: " + author + " Date: " + date + " Title: " + title + " Article: " + article + " Category: " + category;
     }
 
-    public DateTime getDate(){
+    public DateTime getDate() {
         return date;
     }
 

@@ -10,7 +10,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import java.util.Date;
+
 
 
 @SpringBootApplication
@@ -130,9 +130,6 @@ public class NewsserviceApplication {
             repository.save(newsArticle10);
             repository.save(newsArticle11);
             repository.save(newsArticle12);
-
-            String json = "{\"adimgurl\":\""+link1+"\"}";
-
         };
     }
 }
